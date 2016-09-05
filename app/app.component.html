@@ -1,0 +1,65 @@
+<div>
+    <!-- Navigation -->
+    <nav    class="navbar navbar-custom navbar-fixed-top" 
+            role="navigation" 
+            style="background: white">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle" 
+                        data-toggle="collapse" 
+                        data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a  routerLink="/home" 
+                    routerLinkActive="active" 
+                    class="navbar-brand page-scroll">
+                    {{ firstName }}<span class="light"> {{ lastName }}</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="/"></a>
+                    </li>
+                    <li>
+                        <a  class="page-scroll" 
+                            href="/">Experience</a>
+                    </li>
+                    <li>
+                        <a  routerLink="/education" 
+                            routerLinkActive="active" 
+                            class="page-scroll" >Education</a>
+                    </li>
+                    <li>
+                        <a  class="page-scroll" 
+                            href="/">Projects</a>
+                    </li>
+                    <li>
+                        <a  class="page-scroll" 
+                            href="/">Skills</a>
+                    </li>
+                    <li>
+                        <a  class="page-scroll" 
+                            href="/">Connect</a>
+                    </li>
+                    <li>
+                        <a  href="./rutul_patel_resume.pdf" 
+                            target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse-->
+        </div>
+        <!-- /.container -->
+    </nav>
+<router-outlet></router-outlet>
+</div>
+    <!-- Footer -->
+
+    <footer>
+        <div class="container text-center">
+            <p><small class="light">Copyright &copy; Rutul Patel 2016</small></p>
+        </div>
+</footer>
