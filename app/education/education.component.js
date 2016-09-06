@@ -9,27 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var app_service_1 = require('./../app.service');
 var EduComponent = (function () {
-    function EduComponent() {
-        this.education_data = [{
-                "education": [{
-                        id: 1,
-                        schoolName: "DeVry University",
-                        fieldOfStudy: "Computer Engineering Technology",
-                        startDate: "06-01-2011",
-                        endDate: "07-28-2014",
-                        degree: "Bachelor's Degree",
-                        activities: "Developed OneZ project in senior year.",
-                        notes: "Pursued Computer Engineering Technology at DeVry University. Learnt a lot about the field and other relevant academic courses.",
-                        gpa: "3.95"
-                    }]
-            }];
+    function EduComponent(_appService) {
+        this._appService = _appService;
+        this.eduDataType = "Education";
     }
+    EduComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        console.log('EDU_INIT');
+        this._appService.getData("education")
+            .subscribe(function (data) {
+            _this.eduData = data;
+            console.log(_this.eduData);
+        });
+    };
     EduComponent = __decorate([
         core_1.Component({
+            selector: 'edu-module',
             templateUrl: 'app/education/education.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [app_service_1.AppService])
     ], EduComponent);
     return EduComponent;
 }());

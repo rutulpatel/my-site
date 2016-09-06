@@ -1,10 +1,12 @@
-[{
+{
   "overview":
-  {
-    "firstName": "Rutul",
-    "lastName": "Patel",
-    "tagLine": "System Engineer @ AT&T"
-  },
+  [
+    {
+      "firstName": "Rutul",
+      "lastName": "Patel",
+      "tagLine": "System Engineer @ AT&T"
+    }
+  ],
   "experience":
   [
     {
@@ -52,18 +54,27 @@
   [
     {
       "id": 1,
+      "schoolName": "Asia English School",
+      "fieldOfStudy": "High School",
+      "startDate": "06-01-2004",
+      "endDate": "07-28-2008",
+      "degree": "Secondary Diplomas and Certificates",
+      "location": "INDIA",
+      "grade": ""
+    },
+    {
+      "id": 2,
       "schoolName": "DeVry University",
       "fieldOfStudy": "Computer Engineering Technology",
       "startDate": "06-01-2011",
       "endDate": "07-28-2014",
       "degree": "Bachelor's Degree",
-      "activities": "Developed OneZ project in senior year.",
-      "description": "Pursued Computer Engineering Technology at DeVry University. Learnt a lot about the field and other relevant academic courses.",
-      "gpa": "3.95"
+      "location": "ADDISON, IL",
+      "grade": "3.95"
     }
   ],
   "skills":
   [
     "DevOps", "SQL", "JSON"
   ]
-}]
+}

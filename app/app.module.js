@@ -10,19 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
-var app_routing_1 = require('./app.routing');
 var education_component_1 = require('./education/education.component');
+var app_service_1 = require('./app.service');
+var reverse_filter_pipe_1 = require('./reverse-filter.pipe');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, education_component_1.EduComponent],
-            providers: [app_routing_1.appRoutingProviders],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, http_1.JsonpModule],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, education_component_1.EduComponent, reverse_filter_pipe_1.ReversePipe],
+            providers: [app_service_1.AppService],
+            bootstrap: [app_component_1.AppComponent, home_component_1.HomeComponent, education_component_1.EduComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

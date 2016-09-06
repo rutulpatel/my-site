@@ -1,21 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './../app.service';
 
 @Component({
+    selector: 'edu-module',
     templateUrl: 'app/education/education.component.html'
+    
 })
 
-export class EduComponent {
-    education_data: any[] = [{
-        "education": [{
-            id: 1,
-            schoolName: "DeVry University",
-            fieldOfStudy: "Computer Engineering Technology",
-            startDate: "06-01-2011",
-            endDate: "07-28-2014",
-            degree: "Bachelor's Degree",
-            activities: "Developed OneZ project in senior year.",
-            notes: "Pursued Computer Engineering Technology at DeVry University. Learnt a lot about the field and other relevant academic courses.",
-            gpa: "3.95"
-        }]
-    }];
+export class EduComponent implements OnInit {
+    eduData :any[];
+    eduDataType : string = "Education";
+
+    constructor(private _appService: AppService) {
+        
+    }
+
+    ngOnInit(): void {
+        console.log('EDU_INIT');
+        this._appService.getData("education")
+                        .subscribe(data => {
+                            this.eduData = data;
+                            console.log(this.eduData);
+                        });
+        
+    }
 }

@@ -25,18 +25,34 @@
         <script src="node_modules/systemjs/dist/system.src.js"></script>
         <!-- 2. Configure SystemJS -->
         <script src="systemjs.config.js"></script>
+        <!-- import HTTP js -->
+        <script src="node_modules/@angular/http/bundles/http.umd.js" ></script>
         <script>
             System.import('app').catch(function(err){ console.error(err); });
         </script>
   </head>
        
-<body data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="home" data-spy="scroll" data-target=".navbar-fixed-top">
 
             <my-app>Loading...</my-app>
 
+            <div class="container">
+                <home-module></home-module>
+            </div>
+
+            <div id="edu" class="container content-section" >
+                <edu-module></edu-module>
+            </div>
 
         
 
+        <!-- Footer -->
+
+        <footer>
+            <div class="container text-center">
+                <p><small class="light">Copyright &copy; Rutul Patel 2016</small></p>
+            </div>
+        </footer>
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
@@ -51,5 +67,7 @@
         -->
         <!-- Custom Theme JavaScript -->
         <script src="js/my.js"></script>
+        
+        
     </body>
 </html>
