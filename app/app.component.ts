@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+declare var jQuery:any;
+import { Component, OnInit, ElementRef, Inject } from '@angular/core';
 import { AppService } from './app.service';
-
+import 'js/my.js';
 
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'app/app.component.html'
+    templateUrl: 'app/app.component.html' 
 })
 
-export class AppComponent implements OnInit{
+
+export class AppComponent implements OnInit {
     firstName: string;
     lastName: string;
     overviewData: any[];
@@ -27,4 +29,5 @@ export class AppComponent implements OnInit{
                             console.log(this.overviewData);
                         });
     }
-}
+   
+   }

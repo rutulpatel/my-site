@@ -241,9 +241,8 @@ a:focus {
 
 .experience-details {
     text-align: left;
-    padding-top: 10px;
+    padding-top: 5px;
     line-height: 1.5;
-    padding-bottom: 30px;
 }
 
 .padding-5 {
@@ -253,6 +252,14 @@ a:focus {
 .padding-15 {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.logo {
+    height: 300px;
+    vertical-align: middle;
+    background:  no-repeat center center scroll;
+    background-color: #fff;
+    background-position: center;
 }
 
 .nt-logo {

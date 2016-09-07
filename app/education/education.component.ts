@@ -9,7 +9,7 @@ import { AppService } from './../app.service';
 
 export class EduComponent implements OnInit {
     eduData :any[];
-    eduDataType : string = "Education";
+    eduDataHeader : string = "Education";
 
     constructor(private _appService: AppService) {
         

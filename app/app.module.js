@@ -16,15 +16,35 @@ var home_component_1 = require('./home/home.component');
 var education_component_1 = require('./education/education.component');
 var app_service_1 = require('./app.service');
 var reverse_filter_pipe_1 = require('./reverse-filter.pipe');
+var skills_component_1 = require('./skills/skills.component');
+var projects_component_1 = require('./projects/projects.component');
+var experience_component_1 = require('./experience/experience.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, http_1.JsonpModule],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, education_component_1.EduComponent, reverse_filter_pipe_1.ReversePipe],
-            providers: [app_service_1.AppService],
-            bootstrap: [app_component_1.AppComponent, home_component_1.HomeComponent, education_component_1.EduComponent]
+            declarations: [
+                app_component_1.AppComponent,
+                home_component_1.HomeComponent,
+                education_component_1.EduComponent,
+                reverse_filter_pipe_1.ReversePipe,
+                skills_component_1.SkillsComponent,
+                projects_component_1.ProjectComponent,
+                experience_component_1.ExpComponent
+            ],
+            providers: [
+                app_service_1.AppService
+            ],
+            bootstrap: [
+                app_component_1.AppComponent,
+                home_component_1.HomeComponent,
+                education_component_1.EduComponent,
+                skills_component_1.SkillsComponent,
+                projects_component_1.ProjectComponent,
+                experience_component_1.ExpComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

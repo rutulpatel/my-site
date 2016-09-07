@@ -10,28 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var app_service_1 = require('./../app.service');
-var EduComponent = (function () {
-    function EduComponent(_appService) {
+var ProjectComponent = (function () {
+    function ProjectComponent(_appService) {
         this._appService = _appService;
-        this.eduDataHeader = "Education";
+        this.projectsDataHeader = "PROJECTS";
     }
-    EduComponent.prototype.ngOnInit = function () {
+    ProjectComponent.prototype.ngOnInit = function () {
         var _this = this;
-        console.log('EDU_INIT');
-        this._appService.getData("education")
+        console.log('PROJECTS_INIT');
+        this._appService.getData("projects")
             .subscribe(function (data) {
-            _this.eduData = data;
-            console.log(_this.eduData);
+            _this.projectsData = data;
+            console.log(_this.projectsData);
         });
     };
-    EduComponent = __decorate([
+    ProjectComponent = __decorate([
         core_1.Component({
-            selector: 'edu-module',
-            templateUrl: 'app/education/education.component.html'
+            selector: 'projects-module',
+            templateUrl: 'app/projects/projects.component.html'
         }), 
         __metadata('design:paramtypes', [app_service_1.AppService])
-    ], EduComponent);
-    return EduComponent;
+    ], ProjectComponent);
+    return ProjectComponent;
 }());
-exports.EduComponent = EduComponent;
-//# sourceMappingURL=education.component.js.map
+exports.ProjectComponent = ProjectComponent;
+//# sourceMappingURL=projects.component.js.map
