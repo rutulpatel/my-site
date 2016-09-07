@@ -5,7 +5,7 @@ import 'js/my.js';
 
 
 @Component({
-    selector: 'my-app',
+    selector: 'nav-module',
     templateUrl: 'app/app.component.html' 
 })
 

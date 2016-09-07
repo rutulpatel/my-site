@@ -10,6 +10,7 @@ import { ReversePipe } from './reverse-filter.pipe';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectComponent } from './projects/projects.component';
 import { ExpComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     imports: [ BrowserModule, HttpModule, JsonpModule ],
@@ -20,7 +21,8 @@ import { ExpComponent } from './experience/experience.component';
                         ReversePipe, 
                         SkillsComponent, 
                         ProjectComponent, 
-                        ExpComponent 
+                        ExpComponent,
+                        ContactComponent 
                     ],
     providers:      [
                         AppService 
@@ -31,7 +33,8 @@ import { ExpComponent } from './experience/experience.component';
                         EduComponent, 
                         SkillsComponent, 
                         ProjectComponent, 
-                        ExpComponent 
+                        ExpComponent,
+                        ContactComponent 
                     ]
 })
 

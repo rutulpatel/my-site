@@ -19,6 +19,7 @@ var reverse_filter_pipe_1 = require('./reverse-filter.pipe');
 var skills_component_1 = require('./skills/skills.component');
 var projects_component_1 = require('./projects/projects.component');
 var experience_component_1 = require('./experience/experience.component');
+var contact_component_1 = require('./contact/contact.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +33,8 @@ var AppModule = (function () {
                 reverse_filter_pipe_1.ReversePipe,
                 skills_component_1.SkillsComponent,
                 projects_component_1.ProjectComponent,
-                experience_component_1.ExpComponent
+                experience_component_1.ExpComponent,
+                contact_component_1.ContactComponent
             ],
             providers: [
                 app_service_1.AppService
@@ -43,7 +45,8 @@ var AppModule = (function () {
                 education_component_1.EduComponent,
                 skills_component_1.SkillsComponent,
                 projects_component_1.ProjectComponent,
-                experience_component_1.ExpComponent
+                experience_component_1.ExpComponent,
+                contact_component_1.ContactComponent
             ]
         }), 
         __metadata('design:paramtypes', [])

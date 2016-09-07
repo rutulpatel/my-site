@@ -2,10 +2,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="brand-heading">{{ projectsDataHeader }}</h2>
-                <hr>
                 <div class="container-fluid">
                     <div class="row padding-5 education-details">
                         <div class="col-md-12 text-left" *ngFor="let project of (projectsData | reverse)" >
+                            <hr>
                             <dl>
                                 <dt><h3 class="light" style="text-transform: none;">{{ project.name }}</h3></dt>
                                 <dd>
@@ -18,7 +18,6 @@
                                         </div>
                                     </ul>
                                 </dd>
-                            <hr>
                             </dl>
                         </div>
                     </div>

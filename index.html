@@ -44,7 +44,8 @@
 <body id="home" data-spy="scroll" data-target=".navbar-fixed-top" class="navbar">
 
             <div class="page-scroll">
-                <my-app>Loading...</my-app>
+                <!-- moving navigation piece outside nav-module tags because jQuery cant see it -->
+                <nav-module>Loading...</nav-module>
             </div>
 
             <div class="container page-scroll">
@@ -67,9 +68,13 @@
                 <skills-module>Loading...</skills-module>
             </div>
         
+            <div id="contact" class="container page-scroll" >
+                <contact-module>Loading...</contact-module>
+            </div>
 
         <!-- Footer -->
         <footer class="content-section">
+            <hr>
             <div class="container text-center">
                 <p><small class="light">Copyright &copy; Rutul Patel 2016</small></p>
             </div>

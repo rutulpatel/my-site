@@ -2,7 +2,8 @@
 	"overview": [{
 		"firstName": "Rutul",
 		"lastName": "Patel",
-		"tagLine": "System Engineer @ AT&T"
+		"tagLine": "System Engineer @ AT&T",
+		"email": "rutul-patel@live.com"
 	}],
 	"experience": [{
 		"id": 1,
@@ -126,7 +127,7 @@
 	}],
 	"skills": [
 		"Python", "DevOps", "SQL", "JSON", "Java", "JavaScript", "Android", "Shell", "CA RA",
-    "Monitoring", "Docker", "Git", "Jenkins", "Bamboo", "Apache", "WebLogic", "WebSphere",
+    "DynaTrace", "Docker", "Git", "Jenkins", "Bamboo", "Apache", "WebLogic", "WebSphere",
 		"Windows", "Linux", "MacOs "
 	]
 }
