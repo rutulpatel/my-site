@@ -20,6 +20,8 @@ var skills_component_1 = require('./skills/skills.component');
 var projects_component_1 = require('./projects/projects.component');
 var experience_component_1 = require('./experience/experience.component');
 var contact_component_1 = require('./contact/contact.component');
+var core_2 = require('@angular/core');
+core_2.enableProdMode();
 var AppModule = (function () {
     function AppModule() {
     }

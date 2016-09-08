@@ -12,6 +12,9 @@ import { ProjectComponent } from './projects/projects.component';
 import { ExpComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { enableProdMode } from '@angular/core';
+
+enableProdMode();
 @NgModule({
     imports: [ BrowserModule, HttpModule, JsonpModule ],
     declarations:    [ 
